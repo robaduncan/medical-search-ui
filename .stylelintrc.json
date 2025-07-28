@@ -1,0 +1,38 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "plugins": [],
+  "rules": {
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": ["appearance"]
+      }
+    ],
+    "value-no-vendor-prefix": [
+      true,
+      {
+        "ignoreValues": ["box"]
+      }
+    ],
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true
+  },
+  "ignoreFiles": ["dist/**/*", "coverage/**/*", "node_modules/**/*"]
+}

@@ -1,0 +1,146 @@
+/* App Container */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.app-header {
+  background: white;
+  padding: 32px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0 0 12px 0;
+  color: #1e293b;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.app-description {
+  margin: 0 0 16px 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offline-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.offline-badge small {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+/* Main Content */
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.details-section {
+  flex: 1;
+  min-height: 300px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Footer */
+.app-footer {
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  padding: 24px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.app-footer p {
+  margin: 0 0 8px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.app-footer small {
+  color: #94a3b8;
+  font-size: 12px;
+  display: block;
+}
+
+.app-footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 24px 20px;
+  }
+
+  .app-header h1 {
+    font-size: 24px;
+  }
+
+  .app-description {
+    font-size: 14px;
+  }
+
+  .app-content {
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .app-footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 20px;
+  }
+
+  .app-content {
+    padding: 20px 16px;
+  }
+}

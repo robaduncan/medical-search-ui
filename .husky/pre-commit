@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit checks..."
+
+# Run type checking
+echo "📏 Checking TypeScript types..."
+npm run type-check
+
+# Run linting
+echo "🔍 Running ESLint..."
+npm run lint
+
+# Run formatting check
+echo "🎨 Checking code formatting..."
+npm run format:check
+
+# Run CSS linting if CSS files exist
+if find src -name "*.css" -o -name "*.scss" | head -1 | grep -q .; then
+  echo "🎨 Linting CSS/SCSS files..."
+  npm run lint:css
+fi
+
+# Run markdown linting
+echo "📝 Linting markdown files..."
+npm run lint:md
+
+echo "✅ Pre-commit checks completed!" 

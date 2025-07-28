@@ -1,0 +1,111 @@
+# Codecov configuration for coverage reporting
+coverage:
+  # Coverage precision (number of decimal places)
+  precision: 2
+  
+  # Round coverage to nearest integer
+  round: down
+  
+  # Coverage range
+  range:
+    - 70..100
+    
+  # Global coverage targets
+  status:
+    project:
+      default:
+        # Fail if coverage drops below 80%
+        target: 80%
+        # Allow 5% drop from base coverage
+        threshold: 5%
+        # Require coverage for new code
+        if_no_uploads: error
+        # Ignore coverage on documentation
+        paths:
+          - "!docs/"
+          - "!**/*.md"
+          - "!**/*.test.ts"
+          - "!**/*.test.tsx"
+          - "!**/*.config.ts"
+          - "!**/*.config.js"
+      
+    patch:
+      default:
+        # Require 80% coverage on new code
+        target: 80%
+        # Don't fail if only a few lines
+        threshold: 10%
+        # Only apply to added lines
+        if_not_found: success
+
+  # Ignore paths from coverage
+  ignore:
+    - "node_modules/**/*"
+    - "dist/**/*"
+    - "coverage/**/*"
+    - "docs/**/*"
+    - "**/*.test.ts"
+    - "**/*.test.tsx"
+    - "**/*.config.ts"
+    - "**/*.config.js"
+    - "**/*.d.ts"
+    - "src/test/setup.ts"
+    - ".github/**/*"
+    - "test-files/**/*"
+
+# Comment configuration
+comment:
+  layout: "header, diff, flags, components"
+  behavior: default
+  require_changes: false
+  
+# GitHub integration
+github_checks:
+  annotations: true
+
+# Flags for different types of tests
+flags:
+  unittests:
+    paths:
+      - src/
+    carryforward: true
+    
+# Component coverage (for different parts of the app)
+component_management:
+  default_rules:
+    flag_regexes:
+      - unittests
+    paths:
+      - src/
+  individual_components:
+    # Components
+    - component_id: components
+      name: React Components
+      paths:
+        - src/components/
+      flag_regexes:
+        - unittests
+        
+    # Services
+    - component_id: services
+      name: API Services
+      paths:
+        - src/services/
+      flag_regexes:
+        - unittests
+        
+    # Hooks
+    - component_id: hooks
+      name: Custom Hooks
+      paths:
+        - src/hooks/
+      flag_regexes:
+        - unittests
+        
+    # Utils
+    - component_id: utils
+      name: Utilities
+      paths:
+        - src/utils/
+      flag_regexes:
+        - unittests 

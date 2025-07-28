@@ -1,0 +1,222 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [ {
+  "name": "code",
+  "valueCode": "52734007"
+  }, {
+  "name": "display",
+  "valueString": "Total hip replacement"
+  }, {
+  "name": "name",
+  "valueString": "SNOMED Clinical Terms Australian extension"
+  }, {
+  "name": "system",
+  "valueUri": "http://snomed.info/sct"
+  }, {
+  "name": "version",
+  "valueString": "http://snomed.info/sct/32506021000036107/version/20250630"
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "inactive"
+  }, {
+    "name": "value",
+    "valueBoolean": false
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "definition"
+  }, {
+    "name": "value",
+    "valueString": "Total reconstruction of hip with prosthesis."
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "parent"
+  }, {
+    "name": "value",
+    "valueCode": "398010007"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231411002"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231412009"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231410001"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "265157000"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1304236006"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "443435007"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "820601000168107"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "770606008"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1230048008"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "15163009"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "314491003"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "449039004"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "265160007"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231413004"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231414005"
+  } ]
+  }, {
+  "name": "property",
+  "part": [ {
+    "name": "code",
+    "valueCode": "child"
+  }, {
+    "name": "value",
+    "valueCode": "1231415006"
+  } ]
+  }, {
+  "name": "designation",
+  "part": [ {
+    "name": "language",
+    "valueCode": "en"
+  }, {
+    "name": "use",
+    "valueCoding": {
+    "system": "http://snomed.info/sct",
+    "code": "900000000000013009",
+    "display": "Synonym"
+    }
+  }, {
+    "name": "value",
+    "valueString": "Insertion of hip prosthesis, total"
+  } ]
+  }, {
+  "name": "designation",
+  "part": [ {
+    "name": "language",
+    "valueCode": "en"
+  }, {
+    "name": "use",
+    "valueCoding": {
+    "system": "http://snomed.info/sct",
+    "code": "900000000000013009",
+    "display": "Synonym"
+    }
+  }, {
+    "name": "value",
+    "valueString": "Total hip replacement"
+  } ]
+  } ]
+} 
